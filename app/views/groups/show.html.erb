@@ -1,0 +1,29 @@
+<div class="col-md-6">
+  <h1><%= @group.name %> Group</h1>
+  <h3>Members <%= link_to '+ User', new_user_group_path(@group), class: 'btn btn-primary pull-right' %></h3>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @group.users.each do |user| %>
+        <tr>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+          <td><%= rating_for user, "Overall" %></td>
+        </tr>
+      <% end %>
+
+      <!-- Style for user ratings on the 'show group' page -->
+      <div class="rating">
+        <% if current_user %>
+          Overall: <%= rating_for current_user, "Overall", disable_after_rate: false, cancel_hint: 'Cancel this vote!' %>
+        <% end %>
+      </div>
+    </tbody>
+  </table>
+</div>

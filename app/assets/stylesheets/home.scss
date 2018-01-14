@@ -1,0 +1,129 @@
+@font-face {
+  font-family: HKGrotesk-Bold;
+  src: font-url('HKGrotesk-Bold');
+}
+
+html {
+  background-color: #f6f7d7;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+.main_btn {
+    font-size: 1em;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn:hover, .btn:active, .btn:visited, .btn:focus {
+    color: #fff;
+}
+
+a.btn_main{
+    padding-top: 8px;
+}
+
+.red_btn {
+    background-color: #FF165D;
+    box-shadow: 0px 5px 0px #000;
+}
+
+.orange_btn {
+    background-color: #FF9A00;
+    box-shadow: 0px 5px 0px #000;
+}
+
+.btn_main {
+    font-family: 'HKGrotesk-Bold', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    width: 205px;
+    height: 45px;
+    color: #fff;
+}
+
+.btn_up {
+    display: inline-block;
+    padding: 6px 12px;
+    line-height:1.42857143;
+    text-align: center;
+    white-space:    nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: .5s ease;
+}
+
+.btn_in {
+    display: inline-block;
+    padding: 6px 12px;
+    line-height:1.42857143;
+    text-align: center;
+    white-space:    nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: .5s ease;
+}
+
+a {
+    text-decoration:none;
+}
+
+.maintitle{
+    font-family: 'HKGrotesk-Bold', sans-serif;
+    display: block;
+    width: 100%;
+    color: black;
+    width: 82%;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 42px;
+    transition: .5s ease;
+}
+
+
+.crop {
+    overflow: hidden;
+}
+
+.crop img {
+    width: 500px;
+    height: 500px;
+    margin: 0 0 -100px;
+}
+
+.logo{
+    align-self: center;
+    transition: .5s ease;
+    display: flex;
+    overflow: hidden;
+}
+
+a:hover {
+    transform: scale(1.1, 1.1);
+}
